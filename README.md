@@ -1,4 +1,6 @@
 # mathema
 building out mathema: mathematics, reinvented
 
-![banner](media/banner.png)
+<p align="center">
+  <img src="media/banner.png" alt="banner">
+</p>
