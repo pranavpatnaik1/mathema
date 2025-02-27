@@ -25,7 +25,7 @@ const App = () => {
         <section className="hero">
           <h1><i>mathematics,</i><br /><i>reinvented.</i></h1>
           <p>build mathematic intuition, the right way.</p>
-          <button className="explore-btn">explore topics</button>
+          <button className="explore-btn"><strong>explore topics</strong></button>
         </section>
 
         <img src="/mathema problem page.png" alt="" className="interface-placeholder" />
@@ -39,6 +39,10 @@ const App = () => {
           </div>
           <img src="/image 10.png" alt="graph" className="image-placeholder" />
         </section>
+
+        <div className="video-tut">
+            <p>video</p>
+        </div>
       </main>
     </div>
   );
