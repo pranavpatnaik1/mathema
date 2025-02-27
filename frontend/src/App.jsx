@@ -41,7 +41,7 @@ const App = () => {
         </section>
 
         <div className="video-tut">
-            <p>video</p>
+            <p className='placeholder-text'>video</p>
         </div>
       </main>
     </div>
