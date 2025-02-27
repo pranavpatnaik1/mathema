@@ -43,6 +43,8 @@ const App = () => {
         <div className="video-tut">
             <p className='placeholder-text'>video</p>
         </div>
+
+        <button className="start-now"><strong>start now</strong></button>
       </main>
     </div>
   );
