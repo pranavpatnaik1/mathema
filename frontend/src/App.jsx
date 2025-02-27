@@ -45,6 +45,10 @@ const App = () => {
             <p className='placeholder-text'>video</p>
         </div>
 
+        <div>
+            <hr />
+        </div>
+
         <div className='topics'>
             <section className="top-topics">
             <div className="topic-box">Linear Algebra</div>
