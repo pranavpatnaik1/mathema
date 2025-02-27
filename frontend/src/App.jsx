@@ -8,8 +8,8 @@ const App = () => {
         <svg className="line" width="900" height="900" viewBox="0 0 800 500">
           <path d="M300,600 L800,0" />
         </svg>
-        <svg className="circle" width="800" height="600" viewBox="0 0 800 600">
-          <circle cx="330" cy="500" r="300" />
+        <svg className="rotating-arc" width="2000" height="2000" viewBox="0 0 2000 2000">
+            <circle cx="1000" cy="1100" r="800" stroke="white" strokeWidth="5" strokeDasharray="5029" strokeDashoffset="5029" className="draw-in" fill="none" />
         </svg>
       </div>
 
@@ -28,6 +28,7 @@ const App = () => {
           <button className="explore-btn"><strong>explore topics</strong></button>
         </section>
 
+        <div className="shine-background"></div>
         <img src="/mathema problem page.png" alt="" className="interface-placeholder" />
 
         <section className="learn-math-today">
@@ -44,8 +45,24 @@ const App = () => {
             <p className='placeholder-text'>video</p>
         </div>
 
-        <button className="start-now"><strong>start now</strong></button>
+        <div className='topics'>
+            <section className="top-topics">
+            <div className="topic-box">Linear Algebra</div>
+            <div className="topic-box">Discrete Mathematics</div>
+            <div className="topic-box">Calculus: I-III</div>
+            </section>
+            <section className='bottom-topics'>
+            <div className="topic-box">Combinatorics</div>
+            <div className="topic-box">Probability & Statistics</div>
+            </section>
+        </div>
+        
+
+        
       </main>
+
+
+      
     </div>
   );
 };
