@@ -24,7 +24,7 @@ const App = () => {
       <main className="main-content">
         <section className="hero">
           <h1><i>mathematics,</i><br /><i>reinvented.</i></h1>
-          <p>build mathematic intuition, the right way.</p>
+          <p>build mathematic intuition, <b>the right way.</b></p>
           <button className="explore-btn"><strong>explore topics</strong></button>
         </section>
 
@@ -43,10 +43,6 @@ const App = () => {
 
         <div className="video-tut">
             <p className='placeholder-text'>video</p>
-        </div>
-
-        <div>
-            <hr />
         </div>
 
         <div className='topics'>
