@@ -45,24 +45,25 @@ const App = () => {
             <p className='placeholder-text'>video</p>
         </div>
 
+        <hr />
+
+        <div className='course-circle'></div>
         <div className='topics'>
-            <section className="top-topics">
-            <div className="topic-box">Linear Algebra</div>
-            <div className="topic-box">Discrete Mathematics</div>
-            <div className="topic-box">Calculus: I-III</div>
-            </section>
-            <section className='bottom-topics'>
-            <div className="topic-box">Combinatorics</div>
-            <div className="topic-box">Probability & Statistics</div>
-            </section>
+            <button className='topic-box1'>Discrete Mathematics</button>
         </div>
-        
 
-        
+        <div className='get-started'>
+            <h2>get started.</h2>
+            <p className='subtitle'><i>try our <u>recommended roadmap:</u></i></p>
+            <div className='course'>
+                <img src="mathema problem page.png" width="480px" height="249px" alt="" className='course-img'/>
+                <p className='course-title'><b><u>course: Linear Algebra</u></b></p>
+                <p className='course-desc'>This course provides a comprehensive introduction to linear algebra, covering fundamental concepts and their applications. Topics include vector spaces, linear transformations, matrices, determinants, eigenvalues and eigenvectors, inner product spaces, and orthogonality. Students will learn how to solve systems of linear equations, perform matrix operations, and explore the theoretical foundations of linear algebra. Applications in computer science, physics, engineering, and data science will be highlighted throughout the course. By the end, students will develop both computational skills and a deep conceptual understanding of the subject.</p>
+            </div>
+            
+        </div>
       </main>
-
-
-      
+    
     </div>
   );
 };
