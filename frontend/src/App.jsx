@@ -1,7 +1,50 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './App.css';
 
 const App = () => {
+  // Course data
+  const courses = [
+    {
+      title: "Discrete Mathematics",
+      description:
+        "This course explores logic, set theory, combinatorics, graph theory, and proof techniques. Essential for computer science and mathematical reasoning.",
+      image: "discrete_math.png",
+    },
+    {
+      title: "Calculus I-III",
+      description:
+        "Covers limits, derivatives, integrals, multivariable calculus, and vector calculus. Essential for physics, engineering, and economics.",
+      image: "calculus.png",
+    },
+    {
+      title: "Linear Algebra",
+      description:
+        "Covers vector spaces, matrices, determinants, eigenvalues, and applications in computer science, physics, and data science.",
+      image: "linear_algebra.png",
+    },
+    {
+      title: "Probability & Statistics",
+      description:
+        "Learn probability theory, statistical inference, distributions, hypothesis testing, and data analysis techniques.",
+      image: "probability.png",
+    },
+    {
+      title: "Combinatorics",
+      description:
+        "Study counting techniques, permutations, graph theory, and combinatorial proofs, with applications in CS and discrete math.",
+      image: "combinatorics.png",
+    },
+  ];
+
+  // State to track the selected course and trigger animation
+  const [selectedCourse, setSelectedCourse] = useState(courses[0]);
+  const [animationTrigger, setAnimationTrigger] = useState(false);
+
+  const handleCourseClick = (course) => {
+    setSelectedCourse(course);
+    setAnimationTrigger(!animationTrigger); // Toggle to re-trigger animation
+  };
+
   return (
     <div className="app">
       <div className="math-graphics">
@@ -9,7 +52,7 @@ const App = () => {
           <path d="M300,600 L800,0" />
         </svg>
         <svg className="rotating-arc" width="2000" height="2000" viewBox="0 0 2000 2000">
-            <circle cx="1000" cy="1100" r="800" stroke="white" strokeWidth="5" strokeDasharray="5029" strokeDashoffset="5029" className="draw-in" fill="none" />
+          <circle cx="1000" cy="1100" r="800" stroke="white" strokeWidth="5" strokeDasharray="5029" strokeDashoffset="5029" className="draw-in" fill="none" />
         </svg>
       </div>
 
@@ -42,28 +85,37 @@ const App = () => {
         </section>
 
         <div className="video-tut">
-            <p className='placeholder-text'>video</p>
+          <p className='placeholder-text'>video</p>
         </div>
 
         <hr />
 
         <div className='course-circle'></div>
+
+        {/* Course Selection Buttons */}
         <div className='topics'>
-            <button className='topic-box1'>Discrete Mathematics</button>
+          {courses.map((course, index) => (
+            <button
+              key={index}
+              className={`topic-box${index + 1}`}
+              onClick={() => handleCourseClick(course)}
+            >
+              {course.title}
+            </button>
+          ))}
         </div>
 
+        {/* Course Details */}
         <div className='get-started'>
-            <h2>get started.</h2>
-            <p className='subtitle'><i>try our <u>recommended roadmap:</u></i></p>
-            <div className='course'>
-                <img src="mathema problem page.png" width="480px" height="249px" alt="" className='course-img'/>
-                <p className='course-title'><b><u>course: Linear Algebra</u></b></p>
-                <p className='course-desc'>This course provides a comprehensive introduction to linear algebra, covering fundamental concepts and their applications. Topics include vector spaces, linear transformations, matrices, determinants, eigenvalues and eigenvectors, inner product spaces, and orthogonality. Students will learn how to solve systems of linear equations, perform matrix operations, and explore the theoretical foundations of linear algebra. Applications in computer science, physics, engineering, and data science will be highlighted throughout the course. By the end, students will develop both computational skills and a deep conceptual understanding of the subject.</p>
-            </div>
-            
+          <h2>get started.</h2>
+          <p className='subtitle'><i>try our <u>recommended roadmap:</u></i></p>
+          <div className={`course fade-trigger`} key={animationTrigger}>
+            <img src={selectedCourse.image} width="480px" height="249px" alt="" className='course-img'/>
+            <p className='course-title'><b>{selectedCourse.title}</b></p>
+            <p className='course-desc'>{selectedCourse.description}</p>
+          </div>
         </div>
       </main>
-    
     </div>
   );
 };
