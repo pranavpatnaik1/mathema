@@ -8,31 +8,31 @@ const App = () => {
       title: "Discrete Mathematics",
       description:
         "This course explores logic, set theory, combinatorics, graph theory, and proof techniques. Essential for computer science and mathematical reasoning.",
-      image: "discrete_math.png",
+      image: "discrete-math.png",
     },
     {
       title: "Calculus I-III",
       description:
         "Covers limits, derivatives, integrals, multivariable calculus, and vector calculus. Essential for physics, engineering, and economics.",
-      image: "calculus.png",
+      image: "calculus.jpg",
     },
     {
       title: "Linear Algebra",
       description:
         "Covers vector spaces, matrices, determinants, eigenvalues, and applications in computer science, physics, and data science.",
-      image: "linear_algebra.png",
+      image: "linear-algebra.jpeg",
     },
     {
       title: "Probability & Statistics",
       description:
         "Learn probability theory, statistical inference, distributions, hypothesis testing, and data analysis techniques.",
-      image: "probability.png",
+      image: "probability.jpeg",
     },
     {
       title: "Combinatorics",
       description:
         "Study counting techniques, permutations, graph theory, and combinatorial proofs, with applications in CS and discrete math.",
-      image: "combinatorics.png",
+      image: "combinatorics.jpeg",
     },
   ];
 
@@ -84,13 +84,14 @@ const App = () => {
           <img src="/image 10.png" alt="graph" className="image-placeholder" />
         </section>
 
+        
+
         <div className="video-tut">
           <p className='placeholder-text'>video</p>
         </div>
 
-        <hr />
-
         <div className='course-circle'></div>
+        
 
         {/* Course Selection Buttons */}
         <div className='topics'>

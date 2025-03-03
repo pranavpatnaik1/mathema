@@ -321,6 +321,8 @@
 
   .course-img {
     border: 2px solid white;
+    border-radius: 8px;
+    box-shadow: 0.5px 0.5px rgba(127, 127, 127, 0.8);
   }
   
   .course-title {
@@ -484,10 +486,24 @@
   @keyframes fadeInUp {
     from {
       opacity: 0;
-      transform: translateY(20px);
+      transform: translateX(20px);
     }
     to {
       opacity: 1;
-      transform: translateY(0);
+      transform: translateX(0);
     }
+  }
+
+  .bg-circle {
+      position: absolute;
+      left: -200px;
+      margin-top: -100px;
+      height: 800px;
+      width: 800px;
+      border: 5px solid white;
+      background-color: none;
+      border-radius: 50%;
+      display: inline-block;
+      overflow: hidden;
+      z-index: -1;
   }
