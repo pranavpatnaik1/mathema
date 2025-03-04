@@ -7,12 +7,13 @@
   body {
     overflow-x: hidden;
     font-family: 'Inter', sans-serif;
-    background-color: #3C3C3C;
+    background-color: #222222;
     color: white;
     min-height: 100vh;
     position: relative;
     background-size: 20px 20px;
     background-image: radial-gradient(circle, rgba(255, 255, 255, 0.2) 1px, rgba(0, 0, 0, 0) 1px);
+    z-index: 1;
   }
   
   .header {
@@ -21,7 +22,7 @@
     align-items: center;
     padding: 15px 48px;
     background-image: linear-gradient(to right, #5857571d, #bebcbc24);
-    z-index: 1;
+    z-index: 2;
   }
   
   .logo {
@@ -38,12 +39,19 @@
   }
   
   .login-btn {
-    color: white;
-    text-decoration: none;
-    font-weight: 100;
-    font-size: 20px;
+    color: rgb(255, 255, 255);
+    background-color: #9F0000;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+    padding: 10px;
+    transition: 0.1s;
   }
   
+.login-btn:hover {
+  background-color: #8e0000;
+}
+
   .main-content {
     padding: 0 48px;
     position: relative;
@@ -102,7 +110,7 @@
     border-radius: 8px;
     height: 470px;
     margin-top: 80px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    box-shadow: 0px 0px 8px rgba(192, 192, 192, 0.728);
     display: flex;
     justify-content: center;
   }
@@ -160,10 +168,8 @@
     border-radius: 8px;
     margin-top: 50px;
     margin-bottom: 50px;
-    border: 2px solid white; /* Defines a 100px wide white border on all sides */
-    border-left: white;
-    border-top: white;
-    box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.7);
+    border: 2px solid rgb(138, 138, 138); /* Defines a 100px wide white border on all sides */
+    box-shadow: 0px 4px 4px rgba(119, 119, 119, 0.7);
   }
   
   .learn-math-today .text-content {
@@ -218,6 +224,7 @@
     margin-bottom: 20px;
     border: #970000;
     border-width: thick;
+    box-shadow: 0px 4px 4px rgba(119, 119, 119, 0.7);
   }
 
   .placeholder-text {
@@ -248,39 +255,6 @@
     background-color: #900000;
   }
 
-  .top-topics {
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.402);
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 15px;
-    margin-top: 40px;
-  }
-  
-  .bottom-topics {
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.402);
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 15px;
-    margin-top: 20px;
-    margin-bottom: 40px;
-  }
-
-  .topic-box {
-    background-color: #9F0000;
-    color: white;
-    border: 2px solid white;
-    padding: 30px 20px;
-    border-radius: 8px;
-    font-size: 25px;
-    font-weight: bold;
-    text-align: center;
-    width: calc(33.333% - 20px); /* Adjust width to fit three per row with gap */
-    box-sizing: border-box;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-  }
-
   hr {
     margin-top: 50px;
     width: 600px;
@@ -291,12 +265,14 @@
   .get-started h2 {
     margin-top: 100px;
     font-size: 80px;
+    text-shadow: 0px 3px 3px rgba(140, 0, 0, 0.7);
   }
 
   .subtitle {
     opacity: 0.5;
     font-size: 25px;
     margin-top: 20px;
+    text-shadow: 0px 1px 1px rgba(255, 255, 255, 0.7);
   }
 
   .course {
@@ -310,7 +286,7 @@
     margin-top: 60px;
     margin-bottom: 50px;
     border: 2px solid white; /* Defines a 100px wide white border on all sides */
-    box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.7);
+    box-shadow: 0px 0px 8px rgba(230, 230, 230, 0.7);
     opacity: 0.8;
     animation: fadeInUp 0.5s ease-out forwards;
   }
@@ -506,4 +482,16 @@
       display: inline-block;
       overflow: hidden;
       z-index: -1;
+  }
+
+  .our-mission {
+    margin-top: 300px;
+    font-size: 60px;
+    font-weight: 600;
+    margin-bottom: 40px;
+  }
+
+  .mission-stmt {
+    font-size: 20px;
+    margin-bottom: 500px;
   }

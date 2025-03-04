@@ -61,7 +61,7 @@ const App = () => {
           <img src="/final logo.png" alt="logo" className="logo-circle" />
           <span>mathema</span>
         </div>
-        <a href="#" className="login-btn"><u>login</u></a>
+        <button className='login-btn'><b>login</b></button>
       </header>
 
       <main className="main-content">
@@ -71,8 +71,7 @@ const App = () => {
           <button className="explore-btn"><strong>explore topics</strong></button>
         </section>
 
-        <div className="shine-background"></div>
-        <img src="/mathema problem page.png" alt="" className="interface-placeholder" />
+        <img src="/mathema problem page.png" alt="" className="interface-placeholder " />
 
         <section className="learn-math-today">
           <div className="text-content">
@@ -115,6 +114,20 @@ const App = () => {
             <p className='course-title'><b>{selectedCourse.title}</b></p>
             <p className='course-desc'>{selectedCourse.description}</p>
           </div>
+        </div>
+
+        <div>
+          <h2 className='our-mission'>
+            <i><u>our mission</u></i>
+          </h2>
+          <div className='mission-stmt'>
+            <p style={{marginBottom: "30px"}}><b>math is boring.</b> </p>
+            <p style={{marginBottom: "30px"}}>with confusing explanations, abstract problems that feel disconnected from reality, and a system that prioritizes memorization over understanding, it’s no surprise why so many people think so.</p>
+            <p style={{marginBottom: "30px"}}><b><b style={{color: "#9F0000"}}>mathema</b></b> exists to change that. we believe math should be intuitive, visual, and deeply engaging. instead of rote learning, we focus on building true mathematical intuition—breaking down complex concepts into interactive experiences that make sense. </p>
+            <p style={{marginBottom: "30px"}}>whether you’re a student, a professional, or just someone curious about the world, mathema helps you see math not as a chore, but as a tool to think, create, and discover.</p>
+            <p style={{marginBottom: "30px"}}>enjoy.</p>
+          </div>
+          
         </div>
       </main>
     </div>
