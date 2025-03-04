@@ -678,6 +678,10 @@
       width: 300px;
     }
 
+    .bg-circle {
+      display: none;
+    }
+
     /* Reset all topic boxes */
     .topic-box1, .topic-box2, .topic-box3, .topic-box4, .topic-box5 {
       position: static;
