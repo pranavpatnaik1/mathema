@@ -121,13 +121,16 @@ const App = () => {
             <i><u>our mission</u></i>
           </h2>
           <div className='mission-stmt'>
-            <p style={{marginBottom: "30px"}}><b>math is boring.</b> </p>
+            <p style={{marginBottom: "30px"}}><b>"math is boring."</b> </p>
             <p style={{marginBottom: "30px"}}>with confusing explanations, abstract problems that feel disconnected from reality, and a system that prioritizes memorization over understanding, it’s no surprise why so many people think so.</p>
-            <p style={{marginBottom: "30px"}}><b><b style={{color: "#9F0000"}}>mathema</b></b> exists to change that. we believe math should be intuitive, visual, and deeply engaging. instead of rote learning, we focus on building true mathematical intuition—breaking down complex concepts into interactive experiences that make sense. </p>
+            <p style={{marginBottom: "30px"}}><b><b className="company-name" style={{textShadow: "0px 2px 10px rgb(40, 40, 40)", textStroke: "1px  white"}}>mathema</b></b> exists to change that.</p>
+            <p style={{marginBottom: "30px"}}>we believe math should be intuitive, visual, and deeply engaging. instead of rote learning, we focus on building true mathematical intuition—breaking down complex concepts into interactive experiences that make sense. </p>
             <p style={{marginBottom: "30px"}}>whether you’re a student, a professional, or just someone curious about the world, mathema helps you see math not as a chore, but as a tool to think, create, and discover.</p>
             <p style={{marginBottom: "30px"}}>enjoy.</p>
           </div>
-          
+        </div>
+        <div className='love'>
+          made w/ love, <a href="https://www.instagram.com/pranavpatnaik_/" target="_blank" className='love-link'>@pranavpatnaik_</a>
         </div>
       </main>
     </div>

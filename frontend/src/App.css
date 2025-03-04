@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -6,7 +8,7 @@
   
   body {
     overflow-x: hidden;
-    font-family: 'Inter', sans-serif;
+    font-family: "Inter";
     background-color: #222222;
     color: white;
     min-height: 100vh;
@@ -42,13 +44,15 @@
     color: rgb(255, 255, 255);
     background-color: #9F0000;
     border-radius: 5px;
-    border: none;
+    border: 2px double rgb(255,255,255);
     font-size: 16px;
     padding: 10px;
     transition: 0.1s;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.402);
   }
   
 .login-btn:hover {
+  border: 2px solid rgb(255,255,255);
   background-color: #8e0000;
 }
 
@@ -159,6 +163,7 @@
   }
   
   .learn-math-today {
+    font: "Inter";
     display: flex;
     justify-self: center;
     background-color: #970000;
@@ -173,6 +178,7 @@
   }
   
   .learn-math-today .text-content {
+    font-family: "Inter";
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.402);
     flex: 1;
     display: flex;
@@ -183,6 +189,7 @@
   }
   
   .learn-math-today h2 {
+    font-family: "Inter";
     font-size: 50px;
     font-weight: 700;
     margin-top: 15px;
@@ -192,7 +199,7 @@
   
   .learn-math-today p {
     font-size: 25px;
-    font-weight: 300;
+    font-weight: 500;
     margin-left: 10px;
     opacity: 0.9;
   }
@@ -312,7 +319,7 @@
     margin-top: 10px;
     line-height: 18px;
     margin-left: 5px;
-    font-weight: 100;
+    font-weight: 200;
     font-size: 15px;
   }
 
@@ -330,6 +337,7 @@
   }
 
   .topic-box1 {
+    font-family: 'Inter';
     position: absolute;
     background-color: #9F0000;
     color: white;
@@ -342,7 +350,7 @@
     font-weight: bold;
     text-align: center;
     width:250px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 10px rgba(236, 236, 236, 0.3);
   }
 
   .topic-box1:hover {
@@ -356,6 +364,7 @@
   }
 
   .topic-box2 {
+    font-family: 'Inter';
     position: absolute;
     background-color: #9F0000;
     color: white;
@@ -489,9 +498,39 @@
     font-size: 60px;
     font-weight: 600;
     margin-bottom: 40px;
+    text-shadow: 0px 3px 3px rgba(140, 0, 0, 0.7);
   }
 
   .mission-stmt {
+    background-color: #464646;
+    font-family: "Inter";
+    padding: 20px;
     font-size: 20px;
-    margin-bottom: 500px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    border: 2px solid white;
+  }
+
+  .mission-stmt p {
+    width: 600px;
+  }
+
+  .company-name {
+    -webkit-text-stroke: 0.2px rgb(138, 98, 98);
+  }
+
+  .love {
+    font-size: 14px;
+    color: white;
+    text-align: right;
+    margin-bottom: 30px;
+  }
+
+  .love-link {
+    color: white;
+    transition: 0.1s;
+  }
+
+  .love-link:hover {
+    color: #c00000;
   }
