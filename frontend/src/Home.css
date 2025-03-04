@@ -30,11 +30,14 @@
   .logo {
     display: flex;
     align-items: center;
-    font-size: 20px;
+    font-size: 22px;
+    font-weight: 600;
+    color: #d4d4d4;
   }
   
   .logo-circle {
-    width: 28px;
+    border: 1px solid white;
+    width: 35px;
     background-color: #cc2020;
     border-radius: 50%;
     margin-right: 10px;
@@ -85,6 +88,7 @@
   }
   
   .explore-btn {
+    text-decoration: none;
     background-color: #9F0000;
     color: white;
     border: #1e1e1e;
@@ -173,7 +177,7 @@
     border-radius: 8px;
     margin-top: 50px;
     margin-bottom: 50px;
-    border: 2px solid rgb(138, 138, 138); /* Defines a 100px wide white border on all sides */
+    border: 2px solid rgb(138, 138, 138);
     box-shadow: 0px 4px 4px rgba(119, 119, 119, 0.7);
   }
   
@@ -533,4 +537,179 @@
 
   .love-link:hover {
     color: #c00000;
+  }
+
+  /* Add responsive styles for header */
+  @media (max-width: 768px) {
+    .header {
+      padding: 15px 20px;
+    }
+
+    .logo {
+      font-size: 18px;
+    }
+
+    .logo-circle {
+      width: 28px;
+    }
+  }
+
+  /* Adjust main content padding */
+  @media (max-width: 768px) {
+    .main-content {
+      padding: 0 20px;
+    }
+
+    .hero h1 {
+      font-size: 48px;
+    }
+
+    .hero p {
+      font-size: 18px;
+    }
+
+    .interface-placeholder {
+      height: auto;
+      width: 100%;
+    }
+
+    .learn-math-today {
+      width: 100%;
+      height: 200px;
+      padding: 15px;
+      flex-direction: row;
+    }
+
+    .learn-math-today h2 {
+      font-size: 32px;
+      margin-top: 10px;
+      margin-bottom: 5px;
+    }
+
+    .learn-math-today p {
+      font-size: 16px;
+      margin-top: 3px;
+    }
+
+    .learn-math-today .image-placeholder {
+      width: 120px;
+      height: 120px;
+      margin-right: 15px;
+      margin-top: 15px;
+    }
+
+    .video-tut {
+      width: 100%;
+      height: 300px;
+    }
+
+    .course-circle {
+      display: none; /* Hide decorative circle on mobile */
+    }
+
+    /* Adjust course selection buttons */
+    .topics button {
+      position: static !important; /* Override absolute positioning */
+      margin: 10px auto;
+      display: block;
+      width: 100%;
+      max-width: 250px;
+    }
+
+    .course {
+      width: 100%;
+      height: auto;
+    }
+
+    .course-img {
+      width: 100%;
+      height: auto;
+    }
+
+    .mission-stmt p {
+      width: 100%;
+    }
+  }
+
+  /* Additional adjustments for very small screens */
+  @media (max-width: 480px) {
+    .hero h1 {
+      font-size: 36px;
+    }
+
+    .get-started h2 {
+      font-size: 48px;
+    }
+
+    .our-mission {
+      font-size: 36px;
+      margin-top: 150px;
+    }
+
+    .learn-math-today {
+      height: 180px;
+    }
+
+    .learn-math-today h2 {
+      font-size: 28px;
+    }
+
+    .learn-math-today p {
+      font-size: 14px;
+    }
+
+    .learn-math-today .image-placeholder {
+      width: 100px;
+      height: 100px;
+      margin-right: 10px;
+    }
+  }
+
+  /* Mobile layout adjustments */
+  @media (max-width: 768px) {
+    .get-started {
+      margin-top: -40px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .topics {
+      width: 300px;
+    }
+
+    /* Reset all topic boxes */
+    .topic-box1, .topic-box2, .topic-box3, .topic-box4, .topic-box5 {
+      position: static;
+      width: 90px;
+      padding: 8px;
+      font-size: 13px;
+      margin: 0;
+    }
+
+    /* Top row container */
+    .topics {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    /* Container for top row */
+    .topics > div:first-child {
+      display: flex;
+      gap: 8px;
+      margin-top: -10px;
+      margin-bottom: -5px;
+    }
+
+    /* Container for bottom row */
+    .topics > div:last-child {
+      display: flex;
+      gap: 8px;
+    }
+
+    .our-mission {
+      font-size: 36px;
+      margin-top: 60px;
+    }
   }
