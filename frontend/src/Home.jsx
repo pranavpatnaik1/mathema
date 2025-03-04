@@ -53,7 +53,7 @@ const Home = () => {
         <svg className="line" width="900" height="900" viewBox="0 0 800 500">
           <path d="M300,600 L800,0" />
         </svg>
-        <svg className="rotating-arc" width="2000" height="2000" viewBox="0 0 2000 2000">
+        <svg className="rotating-arc bg-circle" width="2000" height="2000" viewBox="0 0 2000 2000">
           <circle cx="1000" cy="1100" r="800" stroke="white" strokeWidth="5" strokeDasharray="5029" strokeDashoffset="5029" className="draw-in" fill="none" />
         </svg>
       </div>
