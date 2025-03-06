@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    overflow-x: hidden;
+    font-family: "Inter", "Merriweather";
+    background-color: #222222;
+    color: white;
+    min-height: 100vh;
+    position: relative;
+    background-size: 20px 20px;
+    background-image: radial-gradient(circle, rgba(255, 255, 255, 0.2) 1px, rgba(0, 0, 0, 0) 1px);
+    z-index: 1;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 48px;
+    background-image: linear-gradient(to right, #5857571d, #bebcbc24);
+    z-index: 2;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    font-size: 22px;
+    font-weight: 600;
+    color: #d4d4d4;
+  }
+
+  .topics-container {
+    padding: 0 45px;
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .title {
+    margin-top: 30px;
+
+    font-size: 75px;
+    font-weight: 600;
+    font-style: italic;
+
+  }
+
+  .topic-button {
+    border: none;
+    border-radius: 5px;
+    margin-right: 5px;
+    margin-top: 50px;
+    padding: 8px;
+
+    font-size: 15px;
+    font-style: italic;
+
+    color: white;
+    background-color: #A01414;
+    transition: 0.1s;
+  }
+
+  .topic-button:hover {
+    outline: 2px solid white;
+    background-color: #940000;
+  }
+
+  .topic-button:active {
+    outline: 2px solid white;
+    background-color: #850000;
+  }
